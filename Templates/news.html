@@ -1,0 +1,13 @@
+{% extends "home.html" %}
+{% block newscontent %}
+{% for item in r12['articles'] %}
+  <div>
+  <h1>
+    {{item['title']}}
+  </h1>
+  <p>{{item['description']}}</p>
+  <img src="{{item['urlToImage']}}" width="100px" height="100px"/>
+  <p><a href="{{item['url']}}">Know more</a></p>
+
+{% endfor %}
+{% endblock %}

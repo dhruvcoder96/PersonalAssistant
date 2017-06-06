@@ -1,0 +1,41 @@
+<html>
+  <title>Personal Assistant</title>
+  <body>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"></link>
+
+     <div id="welcome"><h1>  Welcome Hooman! </h1></div>
+
+
+<div id="qt">
+      <div id="quote">
+
+        {% block quotecontent %}
+        <p>"{{quote}}"</p>
+        </br>
+        <p>{{authorname}}</p>
+
+        {% endblock %}
+      </div>
+      <div id="temperature">
+        The temperature is:
+          <h1>
+            {{datatemp['main']['temp']}}
+          </h1>
+      </div>
+</div>
+
+      <div id="News">
+           The News is:
+           {% for item in r12['articles'] %}
+           <h4>
+            {{item['title']}}
+          </h4>
+           <p>{{item['description']}}</p>
+           <img src="{{item['urlToImage']}}" width="100px" height="100px"/>
+           <p><a href="{{item['url']}}">Know more</a></p>
+           {% endfor %}
+      </div>
+
+
+  </body>
+</html>

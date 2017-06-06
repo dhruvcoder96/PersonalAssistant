@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+}
+
+h1,p{
+  color:white;
+}
+
+#welcome{
+ color:white;
+ font-family:cursive;
+ text-align: center;
+ margin-left:40%;
+ width:20%;
+}
+
+#qt{
+  color:white;
+  font-family:cursive;
+  text-align: center;
+  background-color: rgba(151,142,142,0.5);
+  width:70%;
+  height:80%;
+  font-size: 40px;
+  align:center;
+  float:left;
+}
+
+#temperature, #quote{
+  color:white;
+  font-family:cursive;
+  text-align: center;
+  align:center;
+  background-color: rgba(100,142,142,0.5);
+  font-size: 30px;
+  display:block;
+  height:50%;
+}
+
+#News{
+  color:white;
+  font-family:cursive;
+  text-align: center;
+  align:center;
+  float:right;
+  background-color: rgba(50,142,142,0.5);
+  width:30%;
+  height:80%;
+  font-size: 20px;
+  overflow:auto;
+}
